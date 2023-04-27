@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    color: white;
+    background-image: url(imgs/wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+main {
+    position: absolute;
+    padding: 0 0 30px 0;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    width: 40%;
+    left: 50vw;
+    top: 50vh;
+    backdrop-filter: blur(15px);
+    transform: translate(-50%, -50%);
+}
+
+main h1 {
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+main p {
+    margin: 0;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+main p a, 
+#rem-forg a{
+    text-decoration: none;
+    color: white;
+}
+
+main p a:hover, 
+#rem-forg a:hover{
+    color: rgb(112, 107, 107);
+}
+
+div.campo {
+    padding: 0 20px;
+}
+
+div.campo h4 {
+    margin: 0;
+    padding: 0 10px;
+}
+
+div.campo input{
+    margin: 0 10px 30px 10px; 
+    padding: 5px 5px;
+    width: 90%;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    outline: none;
+    background: transparent;
+    border-color: white;
+    font-size: 1em;
+}
+
+#rem-forg {
+    text-align: center;
+}
+
+#bt-login {
+    width: 50%;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 20px 35px 10px 35px;
+    background-color: white;
+    border-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    width: 80%;
+}
+
+
+/* Reponsividade */
+
+@media screen and (max-width:799px) {
+    main {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:477px){
+    main {
+        width: 80%;
+        backdrop-filter: blur(7px);
+    }
+}
